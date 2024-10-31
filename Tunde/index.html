@@ -17,10 +17,33 @@
 
 <body>
     <!--Header-->
-    <header class="d-inline-flex" style="position: relative; display: inline-block;">
-        <img src="media/logo-temp.png" style="width:10%">
-        <img src="media/header-temp.png" style="width: 100%;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #46653C; opacity: 0.3; pointer-events: none;"></div>
+    <header class="position-relative">
+        <!-- Set logo width to a relative unit for automatic scaling -->
+        <div style="width: 10vw; position: absolute; left: 0; bottom: 0;">
+            <img src="media/logo-temp.png" class="w-100">
+        </div>
+        <!-- Set carousel margin to match the logo's width -->
+        <div id="carouselExample" class="carousel slide" style="margin-left: 10vw;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="media/slide-temp-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/slide-temp-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/slide-temp-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
     <!--Test div start-->
     <div class="bg-c-light text-c-primary w-75 mx-auto">
