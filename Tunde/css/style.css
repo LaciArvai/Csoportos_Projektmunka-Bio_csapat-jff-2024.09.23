@@ -3,6 +3,14 @@
     --bs-body-font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --c-primary: #32444E;
+    --c-secondary: #587175;
+    --c-dark: #2A2328;
+    --c-light: #E2E5EC;
+    --c-info: #46653C;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -12,21 +20,81 @@
 }
 
 /* 2.Page styles */
+/* 2.1.Navbar styles */
+
+.navbar {
+    background-color: var(--c-primary);
+}
+
+.navbar-brand {
+    color: var(--c-light) !important;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: var(--c-info) !important;
+}
+
+/* Navbar links */
+
+.navbar .nav-link {
+    color: var(--c-light) !important;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.navbar .nav-link:hover {
+    background-color: var(--c-secondary);
+    color: var(--c-light) !important;
+}
+
+/* Active link indicator */
+
+.navbar .nav-item.active .nav-link {
+    background-color: var(--c-info);
+    color: var(--c-light) !important;
+}
+
+/* 2.2.Footer styles */
+
+footer {
+    background-color: var(--c-dark);
+    color: var(--c-light);
+    padding: 20px;
+    text-transform: none;
+}
+
+.footer-social a {
+    color: var(--c-light);
+    font-size: 1.5em;
+    margin-right: 15px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.footer-social i {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.footer-social a:hover {
+    color: var(--c-info);
+}
+
+.custom-input {
+    background-color: var(--c-light);
+    color: var(--c-primary);
+}
+
+.custom-button {
+    background-color: var(--c-secondary);
+    color: var(--c-light);
+}
+
 /* 3.Component styles*/
-/* 3.1.Header */
-.logo {
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-#carousel-header {
-    margin-left: 10vw;
-}
-
-/* 3.2.Hero section */
+/* 3.1.Hero section */
 .hero-video-container {
     height: 45vh;
 }
@@ -38,5 +106,9 @@
 
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    height:400px;
+    height: 400px;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #0d6e1d !important;
 }
