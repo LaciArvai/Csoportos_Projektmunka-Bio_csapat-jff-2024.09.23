@@ -40,3 +40,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     height:400px;
 }
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #0d6e1d !important;
+}
