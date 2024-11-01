@@ -24,64 +24,75 @@
 
 .navbar {
     background-color: var(--c-primary);
-    }
-    .navbar-brand {
+}
+
+.navbar-brand {
     color: var(--c-light) !important;
     font-weight: bold;
     transition: color 0.3s;
-    }
-    .navbar-brand:hover {
+}
+
+.navbar-brand:hover {
     color: var(--c-info) !important;
-    }
-    
-    /* Navbar links */
-    
-    .navbar .nav-link {
+}
+
+/* Navbar links */
+
+.navbar .nav-link {
     color: var(--c-light) !important;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 5px;
     padding: 8px 15px;
-    }
-    .navbar .nav-link:hover {
+}
+
+.navbar .nav-link:hover {
     background-color: var(--c-secondary);
     color: var(--c-light) !important;
-    }
-    
-    /* Active link indicator */
-    
-    .navbar .nav-item.active .nav-link {
+}
+
+/* Active link indicator */
+
+.navbar .nav-item.active .nav-link {
     background-color: var(--c-info);
     color: var(--c-light) !important;
-    }
-    
-    /* 2.2.Footer styles */
-    
-    footer {
-        background-color: var(--c-dark);
-        color: var(--c-light);
-        padding: 20px;
-    }
-    
-    .footer-social a {
-        color: var(--c-light);
-        font-size: 1.5em;
-        margin-right: 15px;
-        text-decoration: none;
-    }
-    
-    .footer-social a:hover {
-        color: var(--c-info);
-    }
-    
-    .custom-input {
-        background-color: var(--c-light);
-        color: var(--c-primary);
-    }
-    
-    .custom-button {
-        background-color: var(--c-secondary);
-        color: var(--c-light);
-    }
+}
+
+/* 2.2.Footer styles */
+
+footer {
+    background-color: var(--c-dark);
+    color: var(--c-light);
+    padding: 20px;
+    text-transform: none;
+}
+
+.footer-social a {
+    color: var(--c-light);
+    font-size: 1.5em;
+    margin-right: 15px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.footer-social i {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.footer-social a:hover {
+    color: var(--c-info);
+}
+
+.custom-input {
+    background-color: var(--c-light);
+    color: var(--c-primary);
+}
+
+.custom-button {
+    background-color: var(--c-secondary);
+    color: var(--c-light);
+}
+
 /* 3.Component styles*/
 /* 3.1.Hero section */
 .hero-video-container {
@@ -95,7 +106,7 @@
 
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    height:400px;
+    height: 400px;
 }
 
 .nav-pills {
