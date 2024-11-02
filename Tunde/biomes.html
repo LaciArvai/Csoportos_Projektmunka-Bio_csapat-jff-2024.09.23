@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>Biomes</title>
+
+    <!--Bootstrap 5.3.3 CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--BS integrated custom colors CSS-->
+    <link rel="stylesheet" href="css/bs-style.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-c-light">
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--c-primary);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="index.html">Homepage</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="biomes.html">Biomes</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="threats.html">Threats</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="conservation.html">Conservation</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Search Bar on the right side -->
+            <form class="d-flex me-2" onsubmit="handleSearch(event)">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                    style="background-color: var(--c-light); color: var(--c-primary);">
+                <button class="btn btn-sm" type="submit"
+                    style="background-color: var(--c-secondary); color: var(--c-light);">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--Navbar end-->
+    <!--Content start-->
+    <div class="container mt-5">
+        <h2 class="text-center my-5 bg-c-dark text-c-light p-3">Biomes</h2>
+        <ul class="nav nav-pills justify-content-center mb-3 mt-3" id="pills-tab" role="tablist">
+            <div class="col-md-6 col-lg-3 my-3">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-rainforest-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-rainforest" type="button" role="tab" aria-controls="pills-rainforest"
+                        aria-selected="false">
+                        <div class="card bg-c-secondary text-c-light">
+                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Tropical rainforest</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-forest-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-forest" type="button" role="tab" aria-controls="pills-forest"
+                        aria-selected="false">
+                        <div class="card bg-c-secondary text-c-light">
+                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Temperate Forest</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-taiga-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-taiga" type="button" role="tab" aria-controls="pills-taiga"
+                        aria-selected="false">
+                        <div class="card bg-c-secondary text-c-light">
+                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Taiga</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-grassland-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-grassland" type="button" role="tab" aria-controls="pills-grassland"
+                        aria-selected="false">
+                        <div class="card bg-c-secondary text-c-light">
+                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Grasslands</h3>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+            </div>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-rainforest" role="tabpanel"
+                aria-labelledby="pills-rainforest-tab">
+                <h3>Tropical rainforest </h3>
+                <p class="presenter-description">
+                    Lorem sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore
+                    magna
+                    aliquam erat volutpat.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="pills-forest" role="tabpanel" aria-labelledby="pills-forest-tab">
+                <h3>Temperate Forest</h3>
+                <p class="presenter-description">
+                    Lorem sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore
+                    magna
+                    aliquam erat volutpat.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="pills-taiga" role="tabpanel" aria-labelledby="pills-taiga-tab">
+                <h3>Taiga </h3>
+                <p class="presenter-description">
+                    Lorem sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore
+                    magna
+                    aliquam erat volutpat.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="pills-grassland" role="tabpanel" aria-labelledby="pills-grassland-tab">
+                <h3>Grasslands </h3>
+                <p class="presenter-description">
+                    Lorem sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore
+                    magna
+                    aliquam erat volutpat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Content end-->
+    <!--Footer start-->
+    <footer class="text-center">
+        <div class="footer-social">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"> Facebook</i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"> Instagram</i></a>
+            <a href="https://www.x.com"><i class="fab fa-twitter"> X</i></a>
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat-ghost"> Snapchat</i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"> Youtube</i></a>
+            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"> TikTok</i></a>
+        </div>
+        <p class="mt-3">© 2024 JFF Biodiversity Bootstrap Website. All rights reserved.</p>
+    </footer>
+    <!--Footer end-->
+    <!--Scripts start-->
+
+    <!--Script for navbar and footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- JavaScript searchbar -->
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const searchTerm = event.target[0].value;
+            alert('You searched for: ' + searchTerm);
+        }
+    </script>
+
+    <!--Bootstrap Javascript 5.3.3. BS+Popper CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
