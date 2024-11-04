@@ -1,5 +1,6 @@
 /* 1.General styles */
 :root {
+
     --bs-body-font-family: "Montserrat", sans-serif;
   }
   
@@ -159,6 +160,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
 }
 
+
 .bio-biome {
   background-color: hsla(188, 14%, 40%, 0.2) !important;
 }
@@ -180,3 +182,4 @@
 .bio-biome p {
   text-align: justify;
 }
+
