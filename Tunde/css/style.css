@@ -158,3 +158,25 @@
   transform: scale(1.1); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
 }
+
+.bio-biome {
+  background-color: hsla(188, 14%, 40%, 0.2) !important;
+}
+
+.bio-biome h3,
+.bio-biome h4 {
+  color: var(--c-light);
+  text-align: center;
+}
+
+.bio-biome h3 {
+  background-color: var(--c-dark);
+}
+
+.bio-biome h4 {
+  background-color: var(--c-primary);
+}
+
+.bio-biome p {
+  text-align: justify;
+}
