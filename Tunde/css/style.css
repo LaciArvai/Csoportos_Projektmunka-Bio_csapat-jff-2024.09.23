@@ -142,6 +142,27 @@
     }
   }
 
+/* 3.1.2.Picture text box */
+
+.picture-container {
+  background-image: url("../media/field-6574455_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bio-tbox2 {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column; 
+  background-color: hsla(0, 1%, 16%, 0.8) !important;
+  color: var(--c-light);
+  width: 100%;
+  height: 100%;
+}
+
+
 /* 3.2.Biomes*/
 /*3.2.1. Navigation cards*/
      
