@@ -217,14 +217,14 @@ text-align: justify;
 /* 3.4.1 Background and text styling */
 
 .globalConsBackground {
-background-image: url("/media/bg_1.avif");
+background-image: url("../media/bg_1.avif");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .localConsBackground {
-background-image: url("/media/bg_2.avif");
+background-image: url("../media/bg_2.avif");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
