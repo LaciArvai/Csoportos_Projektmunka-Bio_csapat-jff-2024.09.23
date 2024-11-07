@@ -216,11 +216,12 @@ text-align: center;
 }
 
 .bio-biome h3 {
-background-color: var(--c-dark);
+background-color: var(--c-info);
+font-size: 250%;
 }
 
 .bio-biome h4 {
-background-color: var(--c-primary);
+background-color: var(--c-info);
 }
 
 .bio-biome p {

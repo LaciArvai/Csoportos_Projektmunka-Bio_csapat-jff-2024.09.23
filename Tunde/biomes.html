@@ -59,7 +59,7 @@
     <!--Navbar end-->
     <!--Content start-->
     <div class="container mt-5">
-        <h2 class="text-center my-5 bg-c-dark text-c-light p-3">Biomes</h2>
+        <h2 class="text-center my-5 bg-c-info text-c-light p-3">Biomes</h2>
         <ul class="nav nav-pills justify-content-center mb-3 mt-3" id="pills-tab" role="tablist">
             <div class="col-md-6 col-lg-3 my-3">
                 <li class="nav-item" role="presentation">
@@ -67,7 +67,7 @@
                         data-bs-target="#pills-rainforest" type="button" role="tab" aria-controls="pills-rainforest"
                         aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/1-1-trop.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Tropical Rainforest</h5>
                             </div>
@@ -80,7 +80,7 @@
                     <button class="nav-link" id="pills-forest-tab" data-bs-toggle="pill" data-bs-target="#pills-forest"
                         type="button" role="tab" aria-controls="pills-forest" aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/2-4-temp.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Temperate Forests</h5>
                             </div>
@@ -93,7 +93,7 @@
                     <button class="nav-link" id="pills-taiga-tab" data-bs-toggle="pill" data-bs-target="#pills-taiga"
                         type="button" role="tab" aria-controls="pills-taiga" aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/3-3-taiga.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Taiga</h5>
                             </div>
@@ -106,7 +106,7 @@
                         data-bs-target="#pills-grassland" type="button" role="tab" aria-controls="pills-grassland"
                         aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/4-5-grass.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Grasslands</h5>
                             </div>
@@ -119,7 +119,7 @@
                     <button class="nav-link" id="pills-desert-tab" data-bs-toggle="pill" data-bs-target="#pills-desert"
                         type="button" role="tab" aria-controls="pills-desert" aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/5-4-des.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Desert</h5>
                             </div>
@@ -132,7 +132,7 @@
                     <button class="nav-link" id="pills-tundra-tab" data-bs-toggle="pill" data-bs-target="#pills-tundra"
                         type="button" role="tab" aria-controls="pills-tundra" aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/6-1-tun.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Tundra</h5>
                             </div>
@@ -146,7 +146,7 @@
                         data-bs-target="#pills-freshwater" type="button" role="tab" aria-controls="pills-freshwater"
                         aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/7-3-fresh.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Freshwater</h5>
                             </div>
@@ -159,7 +159,7 @@
                     <button class="nav-link" id="pills-marine-tab" data-bs-toggle="pill" data-bs-target="#pills-marine"
                         type="button" role="tab" aria-controls="pills-marine" aria-selected="false">
                         <div class="card bg-c-secondary text-c-light">
-                            <img src="media/field-6574455_1920.jpg" class="card-img-top" alt="...">
+                            <img src="media/8-1-marine.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-text">Marine</h5>
                             </div>
@@ -753,6 +753,35 @@
             const searchTerm = event.target[0].value;
             alert('You searched for: ' + searchTerm);
         }
+    </script>
+
+    <!--Script for scroll down to content-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all the tab buttons
+            const tabs = document.querySelectorAll('.nav-link');
+    
+            // Add a click event to each button
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    // Find the target content by its aria-controls attribute
+                    const targetId = e.currentTarget.getAttribute('aria-controls');
+                    const targetElement = document.getElementById(targetId);
+    
+                    // Delay scroll to ensure the tab content is visible first
+                    setTimeout(() => {
+                        const offset = 100; // Adjust this value to scroll less or more
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+    
+                        // Scroll to the target element with an offset
+                        window.scrollTo({
+                            top: targetPosition - offset, // Scroll to the target, minus the offset
+                            behavior: 'smooth' // Smooth scroll
+                        });
+                    }, 100); // delay to allow tab content to show
+                });
+            });
+        });
     </script>
 
     <!--Bootstrap Javascript 5.3.3. BS+Popper CDN-->
