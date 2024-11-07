@@ -1,7 +1,6 @@
-biome.html:
-szöveg doboz képek berakása
+Mandatory done :D
 
-nice to have:
+nice to have to do:
 index.html-puzzle
 biome.html-szöveg doboz rekonfigurálás
 biome.html-kvíz
