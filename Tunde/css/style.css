@@ -216,16 +216,22 @@ text-align: center;
 }
 
 .bio-biome h3 {
-background-color: var(--c-info);
+background-color: var(--c-secondary);
 font-size: 250%;
+width:80%;
+margin: 20px auto;
 }
 
 .bio-biome h4 {
 background-color: var(--c-info);
+width:80%;
+margin: 20px auto;
 }
 
 .bio-biome p {
 text-align: justify;
+width:80%;
+margin: auto;
 }
 
 /* 3.4 Conservation */
