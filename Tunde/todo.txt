@@ -1,0 +1,10 @@
+biome.html:
+kép vágás
+képek beillesztése a cardokba
+szöveg doboz simogatás+képek berakása
+oldal közepére ugratás card aktiválás esetén
+
+nice to have:
+index.html-puzzle
+biome.html-szöveg doboz rekonfigurálás
+biome.html-kvíz
