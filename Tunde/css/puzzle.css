@@ -1,0 +1,196 @@
+/* number of columns/rows, don't forget to adjust the HTML value */
+.puzzle g {
+    --s: 200px; /* size of the puzzle */
+    --r: 12px;
+    display: grid;
+    width: fit-content;
+    border: 1px solid;
+    margin: auto;
+    grid: auto-flow var(--s)/repeat(2, var(--s));
+  }
+
+  @media screen and (max-width: 576px) {
+    .puzzle g {
+      --s:50px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .puzzle g {
+      --s: 100px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .puzzle g {
+      --s: 140px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .puzzle g {
+      --s: 160px;
+    }
+  }
+
+  .puzzle z {
+    display: grid;
+    position: relative;
+    pointer-events: none;
+    outline: 1px dashed;
+  }
+  
+  .puzzle a {
+    grid-area: 1/1;
+    width: 0;
+    transition: 0s 0.2s;
+    pointer-events: initial;
+  }
+  
+  .puzzle b {
+    grid-area: 1/1;
+    z-index: 2;
+    display: grid;
+    filter: drop-shadow(0 0 2px red) drop-shadow(0 0 2px red);
+    cursor: grab;
+    pointer-events: initial;
+    height: calc(100% + var(--r));
+    width: calc(100% + var(--r));
+    place-self: start end;
+    --m:
+        radial-gradient(var(--r) at calc(50% - var(--r)/2) 0,#0000 98%,#000) var(--r) 0/100% var(--r) no-repeat,
+        radial-gradient(var(--r) at calc(100% - var(--r)) calc(50% - var(--r)/2),#0000 98%,#000) var(--r) 50%/100% calc(100% - 2*var(--r)) no-repeat,
+        radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+        radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000);
+  }
+  
+  .puzzle b:before {
+    content: "";
+    background: var(--i) 0/calc(2*var(--s)) calc(2*var(--s));
+    -webkit-mask: var(--m);
+    mask: var(--m);
+  }
+  
+  .puzzle z:first-child b {
+    height: calc(100% + var(--r));
+    width: 100%;
+    --m:
+        radial-gradient(var(--r) at 100% calc(50% + var(--r)/2),#0000 98%,#000)
+         0 calc(-1*var(--r)) no-repeat,
+        radial-gradient(var(--r) at 50% calc(100% - var(--r)),#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-child(-n+1):not(:first-child) b {
+    place-self: start end;
+    height: calc(100% + var(--r));
+    width: calc(100% + var(--r));
+    --m:
+        radial-gradient(var(--r) at calc(100% - var(--r)) calc(50% + var(--r)/2),#0000 98%,#000)
+         var(--r) calc(-1*var(--r)) no-repeat,
+        radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+        radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-child(2) b {
+    place-self: start end;
+    height: calc(100% + var(--r));
+    width: calc(100% + var(--r));
+    --m:
+        linear-gradient(#000 0 0) var(--r) calc(-1*var(--r)) no-repeat,
+        radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+        radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-child(2n+1):not(:first-child):not(:nth-last-child(2)) b {
+    height: calc(100% + var(--r));
+    width: 100%;
+    --m:
+        radial-gradient(var(--r) at 100% calc(50% - var(--r)/2),#0000 98%,#000) 50%/ 100% calc(100% - 2*var(--r)) no-repeat,
+        radial-gradient(var(--r) at 50% 0,#0000 98%,#000) 0 0/ 100% var(--r) no-repeat,
+        radial-gradient(var(--r) at 50% calc(100% - var(--r)),#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-last-child(2) b {
+    height: 100%;
+    width: 100%;
+    --m:
+        radial-gradient(var(--r) at 100% calc(50% - var(--r)),#0000 98%,#000) 0 var(--r) no-repeat,
+        radial-gradient(var(--r) at 50% 0,#0000 98%,#000) 0 0/ 100% var(--r) no-repeat;
+  }
+  
+  .puzzle z:nth-child(2n):not(:nth-child(2)):not(:last-child) b {
+    place-self: start end;
+    height: calc(100% + var(--r));
+    width: calc(100% + var(--r));
+    --m:
+        radial-gradient(var(--r) at calc(50% - var(--r)/2) var(--r),#0000 98%,#000) var(--r) calc(-1*var(--r)) no-repeat,
+        radial-gradient(var(--r) at var(--r) calc(50% - var(--r)/2),#000 98%,#0000),
+        radial-gradient(var(--r) at calc(50% + var(--r)/2) calc(100% - var(--r)),#000 98%,#0000) ;
+  }
+  
+  .puzzle z:last-child b {
+    place-self: end;
+    height: 100%;
+    width: calc(100% + var(--r));
+    --m:
+        radial-gradient(var(--r) at calc(50% - var(--r)/2) 0,#0000 98%,#000) var(--r) 0 no-repeat,
+        radial-gradient(var(--r) at var(--r) 50%,#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-last-child(-n+1):not(:last-child) b {
+    place-self: end;
+    height: 100%;
+    width: calc(100% + var(--r));
+    --m:
+        radial-gradient(var(--r) at calc(50% - var(--r)/2) 0,#0000 98%,#000) var(--r) 0/100% var(--r) no-repeat,
+        radial-gradient(var(--r) at calc(100% - var(--r)) calc(50% - var(--r)/2),#0000 98%,#000) var(--r) 100%/100% calc(100% - var(--r)) no-repeat,
+        radial-gradient(var(--r) at var(--r) 50%,#000 98%,#0000) ;
+  }
+  
+  .puzzle z:nth-of-type(1) b {
+    transform: translate(50%, 50%) rotate(72deg) translate(137%) rotate(-64deg);
+  }
+  
+  .puzzle z:nth-of-type(1) b:before {
+    background-position: 0% 0%;
+  }
+  
+  .puzzle z:nth-of-type(2) b {
+    transform: translate(-50%, 50%) rotate(124deg) translate(101%) rotate(-122deg);
+  }
+  
+  .puzzle z:nth-of-type(2) b:before {
+    background-position: 100% 0%;
+  }
+  
+  .puzzle z:nth-of-type(3) b {
+    transform: translate(50%, -50%) rotate(179deg) translate(142%) rotate(-178deg);
+  }
+  
+  .puzzle z:nth-of-type(3) b:before {
+    background-position: 0% 100%;
+  }
+  
+  .puzzle z:nth-of-type(4) b {
+    transform: translate(-50%, -50%) rotate(155deg) translate(169%) rotate(-155deg);
+  }
+  
+  .puzzle z:nth-of-type(4) b:before {
+    background-position: 100% 100%;
+  }
+  
+  .puzzle z b {
+    transition: 9999s 9999s;
+  }
+  
+  .puzzle z:active a {
+    width: 100%;
+    transition: 0s;
+  }
+  
+  .puzzle z a:hover ~ b {
+    transform: translate(0);
+    filter: none;
+    transition: 0s;
+  }
+  
