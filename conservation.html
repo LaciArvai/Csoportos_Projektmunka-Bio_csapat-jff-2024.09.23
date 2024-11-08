@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodiversity</title>
+    <!--Bootstrap CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!--BS integrated custom colors CSS-->
+    <link rel="stylesheet" href="css/bs-style.css" />
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/elephant_icon.png" />
+  </head>
+
+  <body class="bg-c-light">
+    <!--Navbar starts-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: var(--c-primary)"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a href="index.html"><span><img src="media/logo1.png" width="40px"></span></a>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="biomes.html">Biomes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="threats.html">Threats</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="conservation.html"
+                >Conservation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search Bar on the right side -->
+        <form class="d-flex me-2" onsubmit="handleSearch(event)">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="background-color: var(--c-light); color: var(--c-primary)"
+          />
+          <button
+            class="btn btn-sm"
+            type="submit"
+            style="background-color: var(--c-secondary); color: var(--c-light)"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--Navbar ends-->
+
+    <!-- Main section starts -->
+    <main class="main">
+      <div class="globalConsBackground">
+        <div class="backgroundOverlay">
+          <div class="scroll-spaceS"></div>
+          <div class="globalConservation container">
+            <h1 class="globalConservationHeader">
+              Conservation efforts and future of biodiversity
+            </h1>
+            <h5 class="textPar">
+              Together, these global and local initiatives offer a range of
+              strategies to protect biodiversity by addressing the causes of
+              biodiversity loss and promoting sustainable use of natural
+              resources.
+            </h5>
+              <video class="video" autoplay muted loop>
+                  <source src="media/globalConsVid.mp4" type="video/mp4">
+              </video>
+            <p class="textPar">
+              <h4>
+                Global Conservation Initiatives United Nations Sustainable
+                Development Goals (UN SDGs)
+              </h4> The UN SDGs, specifically
+              Goals 14 (Life Below Water) and 15 (Life on Land), focus on
+              preserving marine and terrestrial ecosystems, reducing
+              deforestation, and halting biodiversity loss. The goal is to restore
+              degraded ecosystems, manage natural resources sustainably, and
+              prevent species extinction. They aim to balance environmental
+              protection with human development.
+            </p>
+            <p class="textPar">
+              <h4>Convention on Biological Diversity (CBD)</h4>Signed by over
+              190 countries, the CBD aims to conserve biological diversity,
+              sustainably use its components, and ensure fair benefits from
+              genetic resources. The Aichi Biodiversity Targets (now
+              succeeded by the Kunming-Montreal Global Biodiversity Framework) set
+              measurable objectives for conserving biodiversity and integrating it
+              into broader planning.
+            </p>
+            <p class="textPar">
+              <h4>
+                Convention on International Trade in Endangered Species of Wild
+                Fauna and Flora (CITES)
+              </h4>This global agreement regulates
+              the international trade of endangered species to prevent their
+              exploitation. It categorizes species by levels of protection to
+              control or ban trade as needed. The goal is to protect over 35,000 species
+              by preventing illegal wildlife trade, reducing poaching, and
+              supporting conservation law enforcement.
+            </p>
+            <p class="textPar">
+              <div class="image-container"><img class="rounded" src="media/wetland.avif" alt="wetland"></div>
+              <h4>Ramsar Convention on Wetlands</h4>The Ramsar Convention
+              focuses on the protection and sustainable management of wetlands,
+              which are crucial for water filtration, flood control, and
+              biodiversity. The goal is to preserve and restore wetlands globally,
+              establish protected wetland areas, and promote awareness of their
+              ecological importance.
+            </p>
+            <p class="textPar">
+              <h4>The Global Environment Facility (GEF)</h4>The GEF provides
+              funding for conservation projects worldwide, especially in
+              developing countries, focusing on climate change, biodiversity, and
+              pollution. The goal is to support sustainable projects that protect ecosystems, foster
+              biodiversity, and combat climate change while benefiting local
+              communities.
+            </p>
+            <div class="scroll-spaceM"></div>
+          </div>
+        </div>
+      </div>
+      <div class="localConsBackground">
+        <div class="backgroundOverlay">
+          <div class="localConservation container">
+            <div class="scroll-spaceM"></div>
+            <div class="image-container"><img class="img-fluid rounded float-end" width="400px" src="/media/sustainability1.avif" alt="sustainability1"></div>
+            <h2 class="localConservationHeader">
+              Local Conservation Initiatives Protected Areas and National Parks
+            </h2>
+            <p class="textPar">
+             Many countries establish protected areas like national
+              parks, wildlife reserves, and marine sanctuaries to safeguard
+              habitats from exploitation and promote biodiversity. The
+              Great Barrier Reef Marine Park in Australia restricts fishing,
+              tourism, and development to protect coral reefs and marine life.
+            </p>
+            <p class="textPar">
+              <h4>Community-Based Conservation (CBC)</h4>CBC initiatives involve
+              local communities in conservation efforts, allowing them to manage
+              resources sustainably and benefit economically. Namibia’s
+              communal conservancies grant local groups land rights to manage
+              wildlife, improving both livelihoods and wildlife populations.
+            </p>
+            <p class="textPar">
+              <h4>Endangered Species Recovery Programs</h4>Many countries run
+              recovery programs targeting species at risk of extinction, focusing
+              on habitat restoration, captive breeding, and reintroduction.
+              In the U.S., the California Condor Recovery Program brought
+              the critically endangered California condor back from near
+              extinction through captive breeding.
+            </p>
+            <p class="textPar">
+              <h4>Reforestation and Habitat Restoration Projects</h4>These
+              projects restore damaged ecosystems by replanting trees, restoring
+              waterways, and removing invasive species. India’s
+              Afforestation Program aims to increase forest cover, combat soil
+              erosion, and improve biodiversity.
+            </p>
+            <div class="image-container"><img class="rounded" src="media/cons4.avif" alt="reforestation"></div>
+            <p class="textPar">
+              <h4>Sustainable Agriculture and Ecotourism Initiatives</h4>Local
+              governments and NGOs promote practices like organic farming and
+              ecotourism that benefit biodiversity and offer sustainable income
+              for communities. Costa Rica’s ecotourism model has
+              incentivized preserving rainforests and biodiversity, turning the
+              country into a global ecotourism leader.
+            </p>
+          </div>
+          <div class="scroll-spaceM"></div>
+        </div>
+      </div>
+    </main>
+    <!-- Main section ends -->
+
+    <!--Footer start here-->
+    <footer class="text-center mt-auto py-3">
+      <div class="footer-social">
+        <footer class="text-center">
+          <div class="footer-social">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"><p class="font-family"> Facebook</p></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"><p class="font-family"> Instagram</p></i></a>
+            <a href="https://www.x.com"><i class="fab fa-twitter"><p class="font-family"> X</p></i></a>
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat-ghost"><p class="font-family"> Snapchat</p></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"><p class="font-family"> Youtube</p></i></a>
+            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"><p class="font-family"> TikTok</p></i></a>
+          </div>
+          <p class="copyright mt-2 mb-1">
+            © 2024 JFF Biodiversity Bootstrap Website. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </footer>
+    <!--Footer end here-->
+
+    <!--Scripts start-->
+
+    <!--Script for navbar and footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- JavaScript searchbar -->
+    <script>
+      function handleSearch(event) {
+        event.preventDefault();
+        const searchTerm = event.target[0].value;
+        alert("You searched for: " + searchTerm);
+      }
+    </script>
+
+    <!--Bootstrap Javascript 5.3.3. BS+Popper CDN-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Custom script-->
+    <script src="script.js"></script>
+
+    <!--Scripts end-->
+  </body>
+</html>

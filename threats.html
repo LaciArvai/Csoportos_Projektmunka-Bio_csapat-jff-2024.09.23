@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Biodiversity</title>
+
+    <!--Bootstrap 5.3.3 CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!--Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!--BS integrated custom colors CSS-->
+    <link rel="stylesheet" href="css/bs-style.css" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/elephant_icon.png" />
+  </head>
+
+  <body class="bg-c-light">
+    <!--Navbar start-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: var(--c-primary)"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a href="index.html"
+            ><span
+              ><img
+                src="media/logo1.png"
+                width="40px"
+                class="me-2 my-1" /></span
+          ></a>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="biomes.html">Biomes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="threats.html">Threats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="conservation.html"
+                >Conservation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search Bar on the right side -->
+        <form class="d-flex me-2" onsubmit="handleSearch(event)">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="background-color: var(--c-light); color: var(--c-primary)"
+          />
+          <button
+            class="btn btn-sm"
+            type="submit"
+            style="background-color: var(--c-secondary); color: var(--c-light)"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--Navbar end-->
+    <!--Content container start-->
+    <div class="container mt-5">
+      <!-- Threats start -->
+      <div class="bg-c-light rounded-4 p-5 mb-5 bio-tbox fade-in-up">
+        <h2 class="text-center mb-3 bg-c-primary text-c-light p-3">
+          Biodiversity benefits humanity in many ways.
+        </h2>
+        <p class="text-justify">
+          It helps make the global economy more resilient, it functions as an
+          integral part of our culture and identity, and research has shown it’s
+          even linked to our physical health.
+        </p>
+        <p class="text-justify">
+          However, despite its importance, Earth’s biodiversity has decreased
+          significantly over the last few decades. In fact, between 1970 and
+          2016, the population of vertebrate species fell by 68% on average
+          worldwide.
+        </p>
+        <!-- Table decline start -->
+        <table class="table">
+          <tr class="table-info">
+            <th>Rank</th>
+            <th>Region</th>
+            <th>Average decline (between 1970 and 2016)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Latin America & Caribbean</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Africa</td>
+            <td>65%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Asia Pacific</td>
+            <td>45%</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>North America</td>
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Europe & Central Asia</td>
+            <td>24%</td>
+          </tr>
+        </table>
+        <!-- Table decline end -->
+        <h2 class="mt-5">Habitat Loss and Fragmentation</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Habitat destruction, often through deforestation, urbanization,
+          agriculture, and infrastructure development, reduces the spaces where
+          species can live and thrive.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Affects all levels of biodiversity, particularly in ecosystems like
+          rainforests and coral reefs, which host a high number of unique
+          species.
+        </p>
+        <h2 class="mt-5">Climate Change</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Rising global temperatures and extreme weather events disrupt
+          ecosystems and force species to adapt, migrate, or face extinction.
+          Changes in temperature and rainfall patterns can also alter habitats,
+          making them uninhabitable for some species.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Affects species sensitive to temperature (e.g., coral reefs suffering
+          from bleaching) and disrupts natural patterns like breeding,
+          migration, and flowering.
+        </p>
+        <img
+          src="./media/diagram_climate_change.png"
+          class="mt-3 img-fluid"
+          alt=""
+        />
+        <h2 class="mt-5">Pollution</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Pollution comes in many forms, including plastic waste, chemical
+          pollutants, pesticides, fertilizers, and air and water contamination.
+          These pollutants poison ecosystems and disrupt the health of species
+          at various trophic levels.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Toxins can accumulate through food chains, harming top predators,
+          while plastic waste impacts marine life, and chemical runoff from
+          agriculture damages freshwater systems.
+        </p>
+        <h2 class="mt-5">Overexploitation of Resources</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Overfishing, logging, poaching, and unsustainable harvesting of plants
+          and animals deplete populations faster than they can recover. Legal
+          and illegal trade of wildlife also contributes to species decline.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Reduces populations of species directly (like fish and trees) and
+          indirectly by harming the ecosystems that depend on these resources.
+        </p>
+        <img src="./media/overexploitation.png" class="mt-3 img-fluid" alt="" />
+        <h2 class="mt-5">Invasive Species</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Species introduced (intentionally or accidentally) to non-native
+          environments often lack natural predators, allowing them to outcompete
+          native species for resources. Examples include the Burmese python in
+          Florida or the zebra mussel in the Great Lakes.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Compete with native species for food and habitat, disrupt food webs,
+          and even cause extinction of local species.
+        </p>
+        <h2 class="mt-5">Disease</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          Human activity and global trade have facilitated the spread of
+          pathogens like the chytrid fungus in amphibians or white-nose syndrome
+          in bats, which can decimate populations.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Diseases, particularly novel ones, can be devastating to species
+          without immunity, sometimes leading to extinction-level threats.
+        </p>
+        <h2 class="mt-5">Human Population Growth and Overconsumption</h2>
+        <h4 class="mt-3">Description</h4>
+        <p>
+          The demand for land, food, water, and resources rises with population
+          growth, leading to increased pressures on ecosystems. Overconsumption
+          depletes resources faster than they can be naturally replenished.
+        </p>
+        <h4 class="mt-3">Impact</h4>
+        <p>
+          Exacerbates other threats, particularly habitat destruction,
+          pollution, and overexploitation, creating cumulative stress on
+          biodiversity.
+        </p>
+        <!-- Table threat start -->
+        <table class="table">
+          <tr class="table-info">
+            <th>Threat</th>
+            <th>Proportion of threat (average across all regions)</th>
+          </tr>
+          <tr>
+            <td>Changes in land and sea use</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Species overexploitation</td>
+            <td>24%</td>
+          </tr>
+          <tr>
+            <td>Invasive species and disease</td>
+            <td>13%</td>
+          </tr>
+          <tr>
+            <td>Pollution</td>
+            <td>7%</td>
+          </tr>
+          <tr>
+            <td>Climate change</td>
+            <td>6%</td>
+          </tr>
+        </table>
+        <!-- Table threat end -->
+      </div>
+      <!-- Threats end -->
+    </div>
+    <!--Content container end-->
+    <!--Footer start here-->
+    <footer class="text-center mt-auto py-3">
+      <div class="footer-social">
+        <footer class="text-center">
+          <div class="footer-social">
+            <a href="https://www.facebook.com"
+              ><i class="fab fa-facebook-f"
+                ><p class="font-family">Facebook</p></i
+              ></a
+            >
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"
+                ><p class="font-family">Instagram</p></i
+              ></a
+            >
+            <a href="https://www.x.com"
+              ><i class="fab fa-twitter"><p class="font-family">X</p></i></a
+            >
+            <a href="https://www.snapchat.com"
+              ><i class="fab fa-snapchat-ghost"
+                ><p class="font-family">Snapchat</p></i
+              ></a
+            >
+            <a href="https://www.youtube.com"
+              ><i class="fab fa-youtube"
+                ><p class="font-family">Youtube</p></i
+              ></a
+            >
+            <a href="https://www.tiktok.com"
+              ><i class="fab fa-tiktok"><p class="font-family">TikTok</p></i></a
+            >
+          </div>
+          <p class="copyright mt-2 mb-1">
+            © 2024 JFF Biodiversity Bootstrap Website. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </footer>
+    <!--Footer end here-->
+
+    <!--Scripts start-->
+
+    <!--Script for navbar and footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- JavaScript searchbar -->
+    <script>
+      function handleSearch(event) {
+        event.preventDefault();
+        const searchTerm = event.target[0].value;
+        alert("You searched for: " + searchTerm);
+      }
+    </script>
+
+    <!--Bootstrap Javascript 5.3.3. BS+Popper CDN-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Custom script-->
+    <script src="script.js"></script>
+
+    <!--Scripts end-->
+  </body>
+</html>
