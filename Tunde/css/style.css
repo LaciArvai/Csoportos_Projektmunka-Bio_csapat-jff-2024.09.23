@@ -249,6 +249,18 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
+/*3.2.2. Quiz*/
+.quiz {
+  --bs-link-color: #46653c !important;
+  --bs-link-hover-color: #46653c !important;
+}
+
+.bio-form {
+  margin-top: 10px;
+  border-bottom: 1px var(--c-light) solid;
+}
+
+
 /* 3.4 Conservation */
 
 /* 3.4.1 Background and text styling */
