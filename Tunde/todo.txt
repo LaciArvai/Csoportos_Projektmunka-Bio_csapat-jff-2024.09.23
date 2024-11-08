@@ -1,6 +1,5 @@
 Mandatory done :D
 
 nice to have to do:
-index.html-puzzle
-biome.html-szöveg doboz rekonfigurálás
+biome.html kép nagyítás hovernél
 biome.html-kvíz

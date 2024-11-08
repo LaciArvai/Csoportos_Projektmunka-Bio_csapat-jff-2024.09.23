@@ -231,3 +231,14 @@
         margin-bottom:175px;
     }
   }
+
+  .puzzle h1 {
+    text-align: center;
+    width: 60%;
+    margin:25px auto;
+  }
+
+  .puzzle p {
+    text-align: center;
+    font-size: 150%;
+  }
