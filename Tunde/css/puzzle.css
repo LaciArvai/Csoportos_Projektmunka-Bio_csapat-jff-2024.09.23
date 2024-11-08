@@ -9,25 +9,29 @@
     grid: auto-flow var(--s)/repeat(2, var(--s));
   }
 
-  @media screen and (max-width: 576px) {
+/* For screens 0px to 576px */
+@media screen and (max-width: 576px) {
     .puzzle g {
-      --s:50px;
+      --s: 90px;
     }
   }
-
-  @media screen and (max-width: 768px) {
+  
+  /* For screens from 577px to 768px */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
     .puzzle g {
       --s: 100px;
     }
   }
-
-  @media screen and (max-width: 992px) {
+  
+  /* For screens from 769px to 992px */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
     .puzzle g {
       --s: 140px;
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  /* For screens from 993px to 1200px */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
     .puzzle g {
       --s: 160px;
     }
@@ -51,7 +55,7 @@
     grid-area: 1/1;
     z-index: 2;
     display: grid;
-    filter: drop-shadow(0 0 2px red) drop-shadow(0 0 2px red);
+    filter: drop-shadow(0 0 2px #46653C) drop-shadow(0 0 2px #46653C);
     cursor: grab;
     pointer-events: initial;
     height: calc(100% + var(--r));
@@ -193,4 +197,37 @@
     filter: none;
     transition: 0s;
   }
+
+  /* puzzle container */
+
+  .puzzle {
+    margin-bottom:200px;
+  }
   
+  /* For screens 0px to 576px */
+@media screen and (max-width: 576px) {
+    .puzzle {
+        margin-bottom:100px;
+    }
+  }
+  
+  /* For screens from 577px to 768px */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .puzzle {
+        margin-bottom:125px;
+    }
+  }
+  
+  /* For screens from 769px to 992px */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .puzzle {
+        margin-bottom:150px;
+    }
+  }
+  
+  /* For screens from 993px to 1200px */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .puzzle {
+        margin-bottom:175px;
+    }
+  }
