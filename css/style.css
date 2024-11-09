@@ -348,9 +348,33 @@ h5 {
 @media (max-width: 576px) {
   .main img {
     width: 100%;
-    max-width: 50vh;
+    display: flex;
+    justify-content: center;
+    max-width: 30vh;
     margin: 5px;
     padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main img {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main img {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
   }
 }
 
